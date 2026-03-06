@@ -1,258 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About | Afahjoy International School</title>
-
-<style>
-
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#e5e5e5;
-text-align:center;
-}
-
-/* SPLASH */
-
-#splash{
-position:fixed;
-width:100%;
-height:100vh;
-background:white;
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-z-index:9999;
-transition:opacity 1s;
-}
-
-#splash img{
-width:220px;
-height:auto;
-border-radius:12px;
-margin-bottom:15px;
-}
-
-/* MAIN CONTENT */
-
-#mainContent{
-display:none;
-}
-
-/* COUNT UP */
-
-.counter-section{
-padding:80px 20px;
-background:#e5e5e5;
-}
-
-.counter{
-font-size:70px;
-font-weight:bold;
-color:#1c3d7a;
-}
-
-.label{
-font-size:22px;
-margin-top:10px;
-}
-
-/* MOTTO */
-
-.motto{
-background:#fff200;
-padding:60px 20px;
-}
-
-.motto h2{
-color:#777;
-font-size:32px;
-margin-bottom:20px;
-}
-
-.motto p{
-font-size:28px;
-font-weight:bold;
-}
-
-/* MISSION */
-
-.mission{
-background:url('mission-bg.jpg') center/cover no-repeat;
-position:relative;
-color:white;
-padding:80px 20px;
-}
-
-.mission::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.65);
-}
-
-.mission-content{
-position:relative;
-max-width:800px;
-margin:auto;
-}
-
-.mission h2{
-font-size:36px;
-margin-bottom:20px;
-letter-spacing:2px;
-}
-
-.mission p{
-font-size:22px;
-line-height:1.7;
-font-weight:600;
-}
-
-/* VISION */
-
-.vision{
-background:#e5e5e5;
-padding:80px 20px;
-}
-
-.vision h2{
-font-size:36px;
-margin-bottom:20px;
-letter-spacing:2px;
-}
-
-.vision p{
-font-size:22px;
-line-height:1.7;
-font-weight:600;
-max-width:800px;
-margin:auto;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFAHJOY</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
-
-<!-- SPLASH SCREEN -->
-
-<div id="splash">
-
-<img src="IMG_1677.jpg" alt="Principal">
-
-<h2>Welcome to Afahjoy International School</h2>
-
+  <nav class="menu-bar">
+    <img class="mipmap" src="1772741208119.png" alt="Logo">
+    <h1 class="txt">A.I.S</h1>
+    <ul>
+      <li><a href="about.html"><button class="btn-A">About</button></a></li>
+      <li><a href="contact.html"><button class="btn-B">Contact</button></a></li>
+      <li><a href="blog.html"><button class="btn-C">Blog</button></a></li>
+      <li><a href="credit.html"><button class="btn-D">Credit</button></a></li>
+    </ul>
+  </nav>
+  
+  <div class="intro">
+    <img class="template" src="img.png" alt="Template Image">
+    <h1>AFAHJOY INTERNATIONAL SCHOOL</h1>
+  </div>
+  <div class="counter-section">
+    b
+<div id="studentCounter" class="counter">1064</div>
+<div class="label"><h1>students enrolled</h1></div>
+    <p class="ping">realtime(marfo_secret:DB)</p>
 </div>
-
-
-<!-- MAIN PAGE -->
-
-<div id="mainContent">
-
-<!-- COUNT UP -->
-
-<div class="counter-section">
-
-<div id="studentCounter" class="counter">0</div>
-<div class="label">Students</div>
-
-</div>
-
-
-<!-- MOTTO -->
-
-<div class="motto">
-
-<h2>Our Motto</h2>
-
-<p>"Service to God and country"</p>
-
-</div>
-
-
-<!-- MISSION -->
-
-<div class="mission">
-
-<div class="mission-content">
-
-<h2>OUR MISSION</h2>
-
-<p>
-Our Mission is to expose students to an enriched teaching and learning
-environment which promotes knowledge, Christian values and service
-to the country.
-</p>
-
-</div>
-
-</div>
-
-
-<!-- VISION -->
-
-<div class="vision">
-
-<h2>OUR VISION</h2>
-
-<p>
-Our Vision is to raise leaders of tomorrow who will be part of the
-solution to our nation's developmental challenges.
-</p>
-
-</div>
-
-</div>
-
-
-<script>
-
-setTimeout(function(){
-
-document.getElementById("splash").style.opacity="0";
-
-setTimeout(function(){
-
-document.getElementById("splash").style.display="none";
-document.getElementById("mainContent").style.display="block";
-
-startCounter();
-
-},1000);
-
-},3000);
-
-
-function startCounter(){
-
-let count = 1;
-let target = 1060;
-
-let counter = document.getElementById("studentCounter");
-
-let interval = setInterval(function(){
-
-counter.innerText = count;
-
-count++;
-
-if(count > target){
-clearInterval(interval);
-}
-
-},2);
-
-}
-
-</script>
-
+  <div class="external">
+    <img class="ceo" src="ceo.png">
+    <h6>CEO OF AFAHJOY INT. SCHOOL (proprietress)</h6>
+  </div>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
