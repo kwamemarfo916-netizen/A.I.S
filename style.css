@@ -1,7 +1,7 @@
 body {
   display: block;
   flex-direction: column;
-  align-items: center;
+  align-items: normal;
   text-align: center;
   background-color: white;
 }
@@ -12,7 +12,8 @@ body {
   height: 90px;
   width: 694px;
   display: flex;
-  align-items: center; 
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-bar button {
@@ -44,12 +45,17 @@ body {
 .menu-bar ul li a:hover {
   background-color: #555;
 }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 10px; /* space between cards */
+}
 
 .intro {
   background-color: black; 
   border-radius: 40px;
   height: 290px;
-  width: auto;
+  width: 300px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -80,18 +86,21 @@ body {
 }
 .txt{
   color: gray;
+  font-family: verdana;
 }
 .counter-section{
  padding:80px 20px;
  background: black;
-  margin-top: 10px;
+  margin-top: 20px;
 border-radius: 40px;
+  width: 300px;
 }
 
 .counter{
 font-size:62px;
 font-weight:bold;
 color: yellow;
+  font-family: verdana;
 }
 
 .label{
@@ -122,10 +131,154 @@ margin-top:10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:300px;
 }
 .external h6{
   color: yellow;
   font-family: verdana;
   font-weight: bold;
   font-size: 14px;
+}
+.external h5{
+  color:yellow; 
+  position: absolute;
+}
+.tel p{
+  color: yellow;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: verdana;
+}
+.tel{
+  background: black;
+  border-radius: 34px;
+  height: 96px;
+  padding:10px;
+  margin-top: 10px;
+  width: 300px;
+}
+.tel strong{
+  color: yellow;
+  font-weight: bolder;
+  font-family: verdana;
+  font-size: 48px;
+}
+.email{
+  background: black;
+  border-radius: 34px;
+  height: 96px;
+  padding:10px;
+  margin-top: 10px;
+  width: 310px;
+}
+.email h5{
+  color:yellow;
+  font-family: verdana;
+  font-weight: bold;
+  font-size: 14px;
+}
+.email a{
+  text-decoration: none;
+  color: yellow;
+  font-family: verdana;
+  font-size: 13px;
+}
+.email button{
+  border-radius: 34px;
+  border: none;
+  background: yellow;
+  height: 30px;
+}
+.maps{
+  background: black;
+  border-radius: 34px;
+  height: 96px;
+  padding:10px;
+  margin-top: 10px;
+  width: 310px;
+  
+}
+.maps h3{
+  color:yellow;
+  font-family: verdana;
+}
+.maps button{
+  border-radius: 34px;
+  border: none;
+  background: yellow;
+  height: 30px;
+  width: 74px;
+}
+.social{
+  background: black;
+  border-radius: 40px;
+  height: 150px;
+  width: 300px;
+  margin-top: 20px;
+}
+.social h3{
+  color: yellow;
+  font-family: verdana;
+}
+.social button{
+  height: 40px;
+  width: 109px;
+  border-radius: 34px;
+  background: yellow;
+  border: none;
+}
+.content{
+  background: black;
+  height: 224px;
+  border-radius: 34px;
+  width: 310px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+}
+.content h2{
+  color: yellow;
+  font-family: verdana;
+  font-style: oblique;
+  font-weight: bolder;
+}
+.content button{
+  background: yellow;
+  height: 44px;
+  width: 99px;
+  border-radius: 34px;
+  border: none;
+  justify-items: normal;
+}
+.net{
+  height: 100px;
+  width: 178px;
+}
+.base{
+  height: 100px;
+  width: 101px;
+  border-radius: 34px;
+}
+.quiz{
+  background: black;
+  height: 224px;
+  border-radius: 34px;
+  width: 310px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+}
+.quiz h2{
+  color: yellow;
+  font-family: verdana;
+  font-style: oblique;
+  font-weight: bolder;
+}
+.quiz button{
+  background: yellow;
+  height: 44px;
+  width: 99px;
+  border-radius: 34px;
+  border: none;
+  justify-items: normal;
 }
