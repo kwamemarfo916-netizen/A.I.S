@@ -3,16 +3,16 @@ body {
   flex-direction: column;
   align-items: normal;
   text-align: center;
-  background-color: white;
+  background-color: black;
 }
 
 .menu-bar {
   background: black;
   border-radius: 40px;
   height: 90px;
-  width: 694px;
+  width: 649px;
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: center;
 }
 
@@ -47,8 +47,8 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* two equal columns */
-  gap: 10px; /* space between cards */
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; 
 }
 
 .intro {
@@ -162,6 +162,7 @@ margin-top:10px;
   font-weight: bolder;
   font-family: verdana;
   font-size: 48px;
+  padding: 14px 20px;
 }
 .email{
   background: black;
@@ -281,4 +282,67 @@ margin-top:10px;
   border-radius: 34px;
   border: none;
   justify-items: normal;
+}
+.vision{
+  background: black;
+  border-radius: 34px;
+}
+.vision h1{
+  color: yellow;
+  font-family: verdana;
+}
+.vision p{
+  color: yellow;
+  font-family: verdana;
+}
+.vision img{
+  height: 63px;
+  width:64px;
+  border-radius: 34px;
+  display: flex;
+  padding: 14px 20px;
+}
+.mission{
+  background: black;
+   border-radius: 34px;
+}
+.mission h1{
+  color: yellow;
+  font-family: verdana;
+}
+.mission p{
+  color: yellow;
+  font-family: verdana;
+}
+.mission img{
+  height: 63px;
+  width:64px;
+  border-radius: 34px;
+  display: flex;
+  padding: 14px 20px;
+}
+footer p{
+  color: yellow;
+}
+input{
+  border-radius: 12px;
+  border-top-color: yellow;
+  border-bottom-color: yellow;
+  border-left-color: yellow;
+  border-right-color: yellow;
+  height: 24px;
+  width: 234px;
+}
+.info{
+  background: black;
+  border-radius: 34px;
+  height: 144px;
+  width: 300px;
+}
+.btn{
+  border-radius: 24px;
+  height: 28px;
+  background: yellow;
+  border: none;
+  border-top: 5px; 
 }
